@@ -1,0 +1,133 @@
+/* Global Styles */
+body, html {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+  
+  /* Container Styling */
+  .page-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Left Column (Profile Info) */
+  .left-column {
+    flex: 30%;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-right: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-section img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .profile-section h2 {
+    color: #7ad37d;
+    margin-bottom: 5px;
+  }
+  
+  .profile-section h3 {
+    color: #aad657;
+  }
+  
+  .profile-section p {
+    color: #555;
+  }
+  
+  hr {
+    margin: 20px 0;
+    border: 1px solid #ddd;
+  }
+  
+  /* Skill Bars */
+  .skill-bar {
+    background-color: #ddd;
+    border-radius: 5px;
+    height: 20px;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  
+  .progress {
+    background-color: #c7ffb1;
+    height: 100%;
+    border-radius: 5px;
+    text-align: right;
+    padding-right: 10px;
+    color: white;
+    line-height: 20px;
+    font-weight: bold;
+    transition: width 0.5s ease; /* Smooth animation */
+  }
+  
+  /* Colorful progress bar variation */
+  .skill-bar:nth-of-type(2) .progress { background-color: #c7ffb1; } /* Blue */
+  .skill-bar:nth-of-type(3) .progress { background-color: #c7ffb1; } /* Blue */
+  .skill-bar:nth-of-type(4) .progress { background-color: #c7ffb1;; } /* Blue */
+  
+  /* Right Column (Work Experience & Education) */
+  .right-column {
+    flex: 70%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .right-column h2 {
+    color: #3498db;
+  }
+  
+  .work, .education {
+    margin-bottom: 20px;
+  }
+  
+  .work h4, .education h4 {
+    color: #f39c12;
+  }
+  
+  .work p, .education p {
+    color: #555;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+    margin-top: 20px;
+  }
+  
+  footer p {
+    color: #f39c12;
+  }
+  
+  footer i {
+    margin: 5px;
+    color: #3498db;
+  }
+  
+  footer i:hover {
+    color: #4CAF50;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .page-container {
+      flex-direction: column;
+    }
+    .left-column, .right-column {
+      flex: 100%;
+      margin: 0;
+    }
+  }
+  
